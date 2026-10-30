@@ -1,0 +1,16 @@
+PT TUTOR — YOUR FIREBASE PROJECT IS CONNECTED IN THIS PACKAGE
+
+Already filled in for your Firebase project: pt-tutor-4b022.
+Email/Password Authentication and Firestore should already be enabled in the Firebase Console.
+
+NO FIREBASE STORAGE REQUIRED. Uploaded files are read and processed in the browser for the current lesson. They are not saved online. This avoids the Firebase Storage billing requirement.
+
+NEXT STEPS
+1) Install dependencies in a Node.js environment: npm install
+2) Build the website: npm run build
+3) Deploy: npx firebase-tools login
+4) Deploy Hosting and Firestore rules: npx firebase-tools deploy --only hosting,firestore:rules
+
+AI lessons require Firebase AI Logic with Gemini Developer API enabled for this same project. AI usage has quotas and may have charges depending on the current plan and usage.
+
+This package is not yet deployed. It still needs a build and deployment.
