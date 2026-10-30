@@ -1,0 +1,20 @@
+{
+  "name": "pt-tutor-firebase",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "deploy": "npm run build && firebase deploy --only hosting,firestore:rules,storage"
+  },
+  "dependencies": {
+    "mammoth": "^1.9.1",
+    "jszip": "^3.10.1",
+    "pdfjs-dist": "^5.4.149",
+    "vite": "^6.4.1",
+    "firebase": "^12.5.0"
+  },
+  "devDependencies": {}
+}
