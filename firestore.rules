@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedInVerified() {
+      return request.auth != null && request.auth.token.email_verified == true;
+    }
+    match /users/{userId} {
+      allow read, write: if signedInVerified() && request.auth.uid == userId;
+      match /lessons/{lessonId} {
+        allow read, create, update, delete: if signedInVerified() && request.auth.uid == userId;
+      }
+    }
+  }
+}
